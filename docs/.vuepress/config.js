@@ -1,7 +1,8 @@
+//const sidebar = require('./sidebar')
 module.exports = {
     title: 'blog-jelly',
     description: 'More interests for you!',
-    base:'/vuepress-starter/',
+    base: '/vuepress-starter/',
     theme: 'cool',
     markdown: {
         // markdown-it-anchor 的选项
@@ -26,18 +27,28 @@ module.exports = {
         iconPrefix: 'icon-',
         feed: false,
         hostname: 'https://jellyl823.github.io/',
-        nav:[
-            {text:'Home',link:'/',icon: 'home'},
-            {text:'HTML',link:'/HTML/'},
-            {text:'Javascript',link:'/Javascript/'}
+        nav: [
+            { text: 'Home', link: '/', icon: 'home' },
+            { text: 'HTML', link: '/HTML/' },
+            { text: 'CSS', link: '/CSS/' },
+            { text: 'Javascript', link: '/Javascript/' }
         ],
-        sidebar:[
-            '/',
-            // 'HTML':[
-                
-            // ],
-            // 'CSS':[],
-            // 'JavaScript':[],
-        ],
+        sidebar: [
+            {
+                title: 'HTML',
+                path:'/HTML/',
+                collapsable: true,
+                children: [
+                    {
+                        title: 'HTML5语义化标签',
+                        path: '/HTML5语义化标签/'
+                    },
+                    {
+                        title: '响应式设计',
+                        path: '响应式设计'
+                    }
+                ]
+            },
+        ]
     },
 }
