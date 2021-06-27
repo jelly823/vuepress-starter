@@ -1,5 +1,5 @@
 module.exports = {
-    "HTML": [{
+    "/HTML/": [{
         title: '基础',
         collapsable: false,
         children: [{
