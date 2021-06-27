@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Hello Jelly!',
+    title: 'blog-jelly',
     description: 'More interests for you!',
     base:'/vuepress-starter/',
     theme: 'cool',
@@ -33,7 +33,11 @@ module.exports = {
         ],
         sidebar:[
             '/',
-            {}
+            // 'HTML':[
+                
+            // ],
+            // 'CSS':[],
+            // 'JavaScript':[],
         ],
     },
 }
