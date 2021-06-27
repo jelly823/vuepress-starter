@@ -1,4 +1,4 @@
-//const sidebar = require('./sidebar')
+const sidebar = require('./sidebar')
 //const nav = require('./nav')
 module.exports = {
     title: 'blog-jelly',
@@ -46,23 +46,7 @@ module.exports = {
             { text: 'CSS', link: '/CSS/' },
             { text: 'Javascript', link: '/Javascript/' }
         ],
-        // sidebar: [
-        //     {
-        //         title: 'HTML',
-        //         path: '/HTML/',
-        //         collapsable: true,
-        //         children: [
-        //             {
-        //                 title: 'HTML5语义化标签',
-        //                 path: '/HTML5语义化标签/'
-        //             },
-        //             {
-        //                 title: '响应式设计',
-        //                 path: '响应式设计'
-        //             }
-        //         ]
-        //     },
-        // ]
+        sidebar
     },
     plugins: [
         [
