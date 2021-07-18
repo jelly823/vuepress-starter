@@ -1,5 +1,5 @@
 const sidebar = require('./sidebar')
-//const nav = require('./nav')
+const nav = require('./nav')
 module.exports = {
     title: 'blog-jelly',
     description: 'More interests for you!',
@@ -28,24 +28,7 @@ module.exports = {
         iconPrefix: 'icon-',
         feed: false,
         hostname: 'https://jellyl823.github.io/',
-        nav: [
-            { text: 'Home', link: '/', icon: 'home' },
-            { text: 'guide', link: '/guide/' },
-            {
-                text: 'HTML', items: [
-                    {
-                        text: 'HTML5语义化标签',
-                        link: '/HTML/HTML5语义化标签'
-                    },
-                    {
-                        text: '响应式设计',
-                        link: '/HTML/响应式设计'
-                    },
-                ]
-            },
-            { text: 'CSS', link: '/CSS/' },
-            { text: 'Javascript', link: '/Javascript/' }
-        ],
+        nav,
         sidebar
     },
     plugins: [

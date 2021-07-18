@@ -1,6 +1,15 @@
 module.exports = [
     { text: 'Home', link: '/', icon: 'home' },
-    { text: 'guide', link: '/guide/' },
+    { text: 'Guide', items:[
+        {
+            text:'前端面经',
+            link: '/guide/Interview'
+        }, 
+        {
+            text:'搭建你的第一个博客',
+            link: '/guide/StartBlog'
+        }
+    ] },
     { text: 'HTML', items: [
         {
             text:'HTML5语义化标签',

@@ -1,4 +1,15 @@
 module.exports = {
+    "/guide/": [{
+        title: '前端面经',
+        collapsable: false,
+        path:'/guide/Interview',
+        sidebarDepth: 0,    // 可选的, 默认值是 1
+    }, {
+        title: 'StartBlog',
+        collapsable: false,
+        path:'/guide/StartBlog',
+        sidebarDepth: 0,    // 可选的, 默认值是 1
+    }],
     "/HTML/": [{
         title: '基础',
         collapsable: false,
